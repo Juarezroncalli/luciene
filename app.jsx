@@ -165,7 +165,7 @@ function Hero() {
               id="ll-hero-portrait"
               shape="rect"
               fit="cover"
-              src="assets/luciene-retrato.png"
+              src="assets/foto-hero-verde.jpeg"
               placeholder="Solte aqui o retrato principal · clique 2× para reenquadrar" />
             
             <span className="tag">retrato</span>
@@ -230,7 +230,7 @@ function Sobre() {
               id="ll-sobre-portrait"
               shape="rect"
               fit="cover"
-              src="assets/luciene-consultorio.png"
+              src="assets/foto-sobre-cafe.jpeg"
               placeholder="Solte aqui uma foto de consultório ou retrato · clique 2× para reenquadrar" />
             
             <span className="ph-label">retrato · sala de consulta</span>
@@ -531,6 +531,31 @@ function Processo() {
 
 }
 
+// ============ Pensamento (split feature) ============
+function Pensamento() {
+  return (
+    <section className="pensamento" id="pensamento">
+      <div className="pens-grid">
+        <Reveal as="div" className="pens-photo">
+          <image-slot
+            id="ll-pensamento-pb"
+            shape="rect"
+            fit="cover"
+            src="assets/foto-tablet-pb.jpeg"
+            placeholder="Solte aqui uma foto contemplativa · clique 2× para reenquadrar" />
+        </Reveal>
+        <Reveal as="div" className="pens-text" delay={150}>
+          <div className="pens-eyebrow">Pensamento do consultório</div>
+          <p className="pens-q">
+            A necessidade de ter <em className="em">o controle</em> das situações é uma das características mais marcantes nos transtornos de ansiedade.
+          </p>
+          <div className="pens-src">@lulessamoreira</div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 // ============ Reflexões ============
 const QUOTES = [
 { q: "O seu diagnóstico não te define — ele deve significar liberdade, e não limitação.", src: "@lulessamoreira · 2025" },
@@ -723,6 +748,7 @@ function App() {
       <Sobre />
       <Servicos />
       <Destaques />
+      <Pensamento />
       <Abordagem />
       <Processo />
       <Reflexoes />
