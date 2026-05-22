@@ -14,7 +14,7 @@
   --sage-deep: #5e6354;   /* verde profundo (botões, contraste) */
   --sage-darker: #404538; /* verde quase preto (ênfase) */
   --sage-tint: #c5c7b8;   /* verde claro (divisores) */
-  --sage-pale: #d8dccc;   /* verde muito claro (backgrounds sutis) */
+  --sage-pale: #cfccae;   /* sage-cream híbrido (faixas/seções) — warm e verde */
 
   /* Gold — ainda existe mas só pro logotipo da marca */
   --gold: #8a703b;
@@ -109,7 +109,7 @@ button { font: inherit; cursor: pointer; }
 .eyebrow .dot {
   display: inline-block;
   width: 6px; height: 6px;
-  background: var(--accent);
+  background: var(--sage-deep);
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
@@ -1249,6 +1249,20 @@ p { margin: 0; }
   border-top: 1px solid var(--sage-tint);
   padding: 48px 0 36px;
   background: var(--sage-pale);
+}
+
+/* Dark footer — off-black esverdeado, deixa o logo dourado brilhar */
+.footer-dark {
+  background: #1f2219;
+  border-top: none;
+  color: color-mix(in oklab, var(--paper) 88%, transparent);
+  padding: 64px 0 40px;
+}
+.footer-dark .footer-meta { color: color-mix(in oklab, var(--paper) 75%, transparent); }
+.footer-dark .footer-mark img { opacity: 1; filter: brightness(1.05); }
+.footer-dark .footer-bottom {
+  border-top: 1px solid color-mix(in oklab, var(--paper) 18%, transparent);
+  color: color-mix(in oklab, var(--paper) 50%, transparent);
 }
 .footer-inner {
   display: flex; flex-wrap: wrap;

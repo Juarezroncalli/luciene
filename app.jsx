@@ -552,8 +552,8 @@ function Pensamento() {
           <div className="pens-src">@lulessamoreira</div>
         </Reveal>
       </div>
-    </section>
-  );
+    </section>);
+
 }
 
 // ============ Reflexões ============
@@ -692,7 +692,7 @@ function Contato() {
 // ============ Footer ============
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer footer-dark">
       <div className="wrap">
         <div className="footer-inner">
           <div>
