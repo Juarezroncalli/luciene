@@ -743,11 +743,9 @@ p { margin: 0; }
 
 /* ====== Marquee ribbon ====== */
 .ribbon {
-  border-top: 1px solid var(--sage-tint);
-  border-bottom: 1px solid var(--sage-tint);
   padding: 22px 0;
   overflow: hidden;
-  background: var(--sage-pale);
+  background: var(--sage);
 }
 .ribbon-track {
   display: flex;
@@ -761,13 +759,13 @@ p { margin: 0; }
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 22px;
-  color: var(--ink-soft);
+  color: var(--paper);
   white-space: nowrap;
   display: inline-flex; align-items: center; gap: 56px;
 }
 .ribbon-item::after {
   content: "✦";
-  color: var(--sage-deep);
+  color: color-mix(in oklab, var(--paper) 65%, transparent);
   font-style: normal;
   font-size: 14px;
 }
